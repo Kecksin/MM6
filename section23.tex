@@ -1,0 +1,69 @@
+\section{Auswirkung von Diversit"at auf verschiedenen Ebenen}
+\subsection{Fragen und Antworten zum Text von \textcite{van_knippenberg_categorization-elaboration_2010}}
+\subsubsection{Wie wirkt sich Diversit"at auf die Leistung einer Arbeitsgruppe aus, wenn man die Perspektive der sozialen Kategorisierung zugrunde legt?}
+Negativ.
+
+\subsubsection{Wie wirkt sich Diversit"at auf die Leistung einer Arbeitsgruppe aus, wenn man die Perspektive der informationellen Ressourcen zugrunde legt?}
+Positiv.
+
+\subsubsection{Beschreiben sie das \emph{Categorization and Elaboration Model of Work Group Diversity and Group Perforance} Welche Variaben spielen eine Rolle, wenn es darum geht, wie sich Diversit"at auf die Leistung auswirkt und wie stehen diese Variablen miteinander in Zusammenhang?}
+Siehe Abbildung \ref{fig:catelab}
+
+\begin{figure}[<+htpb+>]
+        \begin{center}
+                \begin{tikzpicture}
+                        [gross/.style={ellipse, minimum size=1cm,draw},
+                        klein/.style={ellipse,font=\small, draw},
+                        mod/.style={ellipse,minimum size=1cm,draw=magenta,fill=magenta!20},
+                        %modklein/.style={ellipse,font=\small,draw=magenta,fill=magenta!20},
+                        med/.style={ellipse,minimum size=1cm,draw=cyan,fill=cyan!20},
+                        medklein/.style={ellipse,font=\small,draw=cyan,fill=cyan!20}
+                        ]
+                        %Diversitaet und Leistung
+                        \node [gross] (Diversity) at (0,0) {Diversit"at};
+                        \node [gross] (Leistung) at (10,0) {Leistung};
+                        \draw [->] (Diversity) -- node(middle)[auto]{} (Leistung);
+                        \node [klein,draw=red,thick,fill=red!20] (Demografisch) [above left= 0.6cm and 1cm of Diversity] {Demografisch};
+                        \node [klein,draw=green,thick,fill=green!20] (Funktional) [below left= 0.6cm and 1cm of Diversity] {Funktional};
+                        \draw [red](Demografisch) -- node[auto]{-}(Diversity);
+                        \draw [green](Funktional) -- node[auto]{+}(Diversity);
+                        %Elaboration als Mediator
+                        \node [med] (Elaboration) [above=of middle] {Elaboration};
+                        \draw [->] (Diversity) -- node[auto](divelab){}(Elaboration);
+                        \draw [->] (Elaboration) -- (Leistung);
+                        %Mediatormodell der demographischen Diversitaet
+                        \node [klein,fill=red!20,above=of Demografisch] (Kategorisierung) {Kategorisierung}; 
+                        \node [klein,fill=red!20,right=of Kategorisierung] (Bias) {Intergroup Bias};
+                        \draw [->] (Demografisch) -- (Kategorisierung);
+                        \draw [->] (Kategorisierung) -- (Bias);
+                        \draw [->] (Bias) -- (divelab);
+                        %Elaborationsprozess
+                        \node [medklein] (Diskussion) [above=of Elaboration] {Diskussion};
+                        \node [medklein] (Austausch) [left=of Diskussion] {Austausch};
+                        \node [medklein] (Integration) [right=of Diskussion] {Integration};
+                        \draw [-,cyan] (Diskussion) -- (Elaboration);
+                        \draw [-,cyan] (Austausch) -- (Elaboration);
+                        \draw [-,cyan] (Integration) -- (Elaboration);
+                        %Moderatoren
+                        \node [mod] (Ability) [below= 2cm of middle] {F"ahigkeiten};
+                        \node [mod] (Motivation) [left=of Ability] {Motivation};
+                        \node [mod] (Complexity) [right=of Ability] {Komplexit"at};
+                        \draw [->,magenta] (Ability) -- (middle);
+                        \draw [->,magenta] (Motivation) -- (middle);
+                        \draw [->,magenta] (Complexity) -- (middle);
+        \end{tikzpicture}
+        \end{center}
+        \caption{Das \emph{Categorization and Elaboration Model}. Mediatoren in \textcolor{cyan}{cyan}, Moderatoren in \textcolor{magenta}{magenta}.}
+        \label{fig:catelab}
+\end{figure}
+
+\subsubsection{Erkl"aren sie die Studie von Kooij-de Bode et al. (2008). Wann wurde die Studie durchgef"uhrt und was zeigte sie?}
+Die Studie ist von 2008. Untersucht wurde die Leistung in Gruppen, die entweder divers oder homogen waren. Au"serdem waren die Informationen entweder verteilt oder allen zug"anglich. Die Leistung war am besten in homogenen Gruppen mit verteilten Informationen und am schlechtesten in diversen Gruppen mit verteilten Informationen. Wenn die Informationen allen zug"anglich waren zeigte sich kein Effekt f"ur Diversit"at.
+
+Das zeigt den negativen Effekt, den Intergroup Bias auf die Leistung von Gruppen haben kann.
+
+\subsubsection{Welche M"oglichkeiten gibt es, die Leistung einer Gruppe zu steigern, deren Mitglieder unterschiedlichen Gruppen angeh"oren?}
+\begin{itemize}
+        \item Wichtigkeit von Elaboration vermitteln
+        \item "Uberzeugung, dass Diversit"at großen Wert hat, f"ordern
+\end{itemize}

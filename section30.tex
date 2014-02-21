@@ -1,0 +1,60 @@
+\subsection{Fragen und Antworten zum Text von \textcite{aberson_diversity_2010}}
+\subsubsection{Wie lautet die Definition von \emph{Diversit"atserfahrungen} nach \textcite{aberson_diversity_2010}? Inwiefern unterscheidet sich diese Definition von \emph{Intergruppenkontakt}? Welche Beziehung besteht zwischen den beiden Variablen?}
+\emph{Diversit"atserfahrungen} beinhalten nicht unbedingt auch den Kontakt (Teilnahme an einer Veranstaltung, Diversity-Training), umgekehrt aber schon. Allerdings ist \emph{Intergruppenkontakt} als ein separates Ph"anomen anzusehen.
+
+\subsubsection{In welche der beiden Kategorien f"allt die Teilnahme an einem Workshop "uber den Islam? Ist die Zusammenarbeit mit Mitgliedern der Fremdgruppe in einem Arbeitskontext nach \textcite{aberson_diversity_2010} eine Diversit"atserfahrung?}
+Die Teilnahme an einem Workshop ist eine Diversit"atserfahrung, die Zusammenarbeit mit Mitgliedern der Fremdgruppe ist Kontakt.
+
+\subsubsection{Wie ist der Zusammenhang zwischen Intergruppenerfahrungen und Diversit"atseinstellungen? Auf welche weiteren Variablen wirken sich Diversit"atserfahrungen in \emph{large scale studies} aus?}
+Je mehr Intergruppenerfahrungen, desto mehr postive Einstellungen. Au"serdem:
+\begin{itemize}
+        \item mehr b"urgerliches Engagement
+        \item mehr Unterst"utzung f"ur Gleichheit
+        \item bessere Perspektiven"ubernahme
+        \item mehr positive Interaktionen mit Fremdgruppenmitgliedern
+\end{itemize}
+
+\subsubsection{Beschreiben sie die Methode des \emph{Intergroup Dialogue}?}
+Studenten aus unterschiedlichen Gruppen diskutieren "uber Unterschiede, Gemeinsamkeiten, soziale Ungleichheit und Wege der Zusammenarbeit zum Abbau von Ungleichheit.
+
+\subsubsection{Welche Erkl"arungen werden f"ur den Befund diskutiert, dass \emph{small scale studies} nicht immer positive Auswirkungen zeigten?}
+F"ur diesen Befund wird vor allem die geringe Testst"arke aufgrund von zu kleinen Stichproben verantwortlich gemacht.
+
+\subsubsection{Welche Unzul"anglichkeiten hinsichtlich des Designs von Diversity Trainings werden genannt? Welche Evaluationsdesigns w"aren notwendig?}
+\begin{itemize}
+        \item keine Kontrollgruppe
+        \item nur eine Nachher-Messung
+        \item zu wenig Theorie-gest"utzte Programme
+\end{itemize}
+
+\subsubsection{Welche Variablen beeinflussen die Wahrscheinlichkeit, dass Personen Diversit"atserfahrungen machen?}
+\begin{itemize}
+        \item Offenheit f"ur Diversit"at
+        \item diverser Freundeskreis
+        \item Bewusstsein f"ur soziale Ungerechtigkeit
+\end{itemize}
+
+\subsubsection{Welche Variablen konnten als Mediatoren f"ur die Beziehung von Diversit"atserfahrungen und Einstellungen identifiziert werden?}
+Siehe Abbildung \ref{fig:aberson1}
+\begin{figure}[hb!]
+        \begin{center}
+                \begin{tikzpicture}
+                        [latent/.style={ellipse, minimum size=1cm, draw}]
+                        \node [latent] (exp) at (0,0) {Diversit"atserfahrung};
+                        \node [latent] (att) at (10,0) {Einstellung};
+                        \node (middle) at (5,0) {};
+                        \node [latent] (emp) at (5,3) {Empathie};
+                        \node [latent] (persp) [above=of emp] {Perspektiven"ubernahme};
+                        \node [latent, draw=black!50, color=black!50] (anx) [below=of emp] {"Angstlichkeit};
+                        \draw [->] (exp) -- (att);
+                        \draw [->] (exp) -- (emp);
+                        \draw [->] (exp) -- (persp);
+                        \draw [->] (exp) -- (anx);
+                        \draw [->] (emp) -- (att);
+                        \draw [->] (persp) -- (att);
+                        \draw [->] (anx) -- (att);
+                \end{tikzpicture}
+        \end{center}
+        \caption{Mediatoren f"ur den Zusammenhang von Diversit"atserfahrungen und Einstellungen \parencite{aberson_diversity_2010}. "Angstlichkeit konnte - im Gegensatz zur Beziehung von \emph{Intergruppenkontakt} und Einstellungen - nicht als Mediator best"atigt werden. }
+        \label{fig:aberson1}
+\end{figure}

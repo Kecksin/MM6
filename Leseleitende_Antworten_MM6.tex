@@ -1,0 +1,31 @@
+\documentclass[]{report}
+
+\usepackage[ngerman]{babel}
+\usepackage[]{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,positioning,trees,shapes}
+\usepackage[citestyle=apa,bibstyle=apa]{biblatex}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{colorlinks,citecolor=black,linkcolor=black,urlcolor=blue}
+\usepackage[left=3cm,right=3cm]{geometry}
+\renewcommand{\arraystretch}{1.4}
+
+\bibliography{MM6}
+
+\author{Jens Kouros \\(mit freundlicher Unterst\"utzung von Verena Mager)}
+\date{\today}
+\title{Leseleitende Fragen und Antworten zum Modul 6 Community Psychologie}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+\include{chapter01}
+\include{chapter02}
+\include{chapter03}
+\newpage
+\printbibliography
+\end{document}

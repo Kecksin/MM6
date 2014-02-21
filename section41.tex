@@ -1,0 +1,73 @@
+\subsection{Fragen und Antworten zum Text von \textcite{foster-fishman_who_2009}}
+\subsubsection{Auf welche Weise h"angen \emph{hope for change}, \emph{sense of community} und \emph{collective efficacy} im Modell von \textcite{foster-fishman_who_2009} zusammen?}
+Siehe dazu Fig. \ref{fig:foster1}.
+\begin{figure}[h!]
+        \begin{center}
+                \begin{tikzpicture}[normal/.style={shape=ellipse,draw,minimum size=1.6cm,text width=2cm,text centered, execute at begin node=\hskip0pt},
+                        mediator/.style={shape=ellipse,draw,minimum height=1.8,text width=2cm,text centered,fill=magenta!20}]
+                        %alle Konstrukte
+                        \node [mediator] at (0,0) (norms) {Normen};
+                        \node [mediator,above left=of norms] (effic) {kollektive Wirksamkeit};
+                        \node [normal,left= of effic] (hope) {Hoffnung};
+                        \node [normal,below=of hope] (soc) {Sense of Community};
+                        \node [normal,right= of norms] (part) {Partizipation};
+                        \node [normal,below= of norms] (prob) {Probleme};
+                        \node [normal,below= of prob] (skill) {Organisationstalent};
+                        %die Pfade
+                        \draw [->] (norms) -- (part);
+                        \draw [->] (prob) -- (part);
+                        \draw [->] (skill) -- (part);
+                        \draw [->] (effic) -- (norms);
+                        \draw [->] (hope) -- (effic);
+                        \draw [->] (soc) -- (norms);
+                \end{tikzpicture}
+        \end{center}
+        \caption{Zusammenh"ange des Modells von \textcite{foster-fishman_who_2009}. Mediatoren in \textcolor{magenta}{magenta}. Alle Zusammenh"ange werden moderiert durch die Variable \emph{Leadership} (nicht aus Grafik ersichtlich). }
+        \label{fig:foster1}
+\end{figure}
+
+\subsubsection{Was sind \emph{neighbourhood norms for activism}?}
+"Uberzeugungen dar"uber, inwiefern Andere aus der Nachbarschaft aktiv werden.
+
+\subsubsection{Welche Gefahren antizipieren die Autorinnen f"ur die Partizipation, wenn Probleme zu hoch w"aren?}
+Probleme (Prostitution, Drogenmi"sbrauch) f"uhren erstmal zu mehr Partizipation. Wenn die Probleme aber zu massiv sind, dann werden sich die Einwohner z.B. aus Angst zur"uckziehen.
+
+\subsubsection{Wie argumentieren die Autorinnen, dass sie \emph{resident leaders} und \emph{resident followers} in ihrer Studie gesondert betrachten wollen?}
+Es gibt mind. eine Studie, die gezeigt hat, dass beide Gruppen unterschiedlich ticken. So war den Leadern der pers"onliche Kontakt mit den Community Mitgliedern nicht so wichtig wie den Followern.
+
+\subsubsection{Die Ergebnisse unterst"utzten die Hypothese 1 (``Neighbourhood norms will mediate the relationship between neighbourhood capacity and readiness and citizen participation''). Inwiefern?}
+Partizipation wird vorhergesagt durch Normen, die wiederum vorhergesagt werden durch Sense of Community und Hoffnung.
+
+\subsubsection{F"ur welche Prozesse konnte \emph{leadership status} als Moderator identifiziert werden? F"ur welche nicht?}
+Siehe dazu Fig. \ref{fig:foster2}.
+\begin{figure}[h!]
+        \begin{center}
+                \begin{tikzpicture}[normal/.style={shape=ellipse,draw,minimum size=1.5cm,text width=2cm,text centered, execute at begin node=\hskip0pt},
+                        mediator/.style={shape=ellipse,draw,minimum height=1.5,text width=2cm,text centered,fill=magenta!20}]
+                        %alle Konstrukte
+                        \node [mediator] at (0,0) (norms) {Normen};
+                        \node [mediator, above left= of norms] (effic) {kollektive Wirksamkeit};
+                        \node [normal, below= of hope] (soc) {Sense of Community};
+                        \node [normal,left= of effic] (hope) {Hoffnung};
+                        \node [normal,right= of norms] (part) {Partizipation};
+                        \node [normal,below= of norms,node distance=4cm] (prob) {Probleme};
+                        \node [normal,below= of prob] (skill) {Organisationstalent};
+                        %die Pfade
+                        \draw [->,color=green] (norms) -- (part);
+                        \draw [->,color=green] (prob) -- (part);
+                        \draw [->,dotted,color=green] (skill) -- (part);
+                        \draw [->,color=red] (skill) -- (part);
+                        \draw [->] (effic) -- (norms);
+                        \draw [->] (hope) -- (effic);
+                        \draw [->,very thick] (soc) -- (norms);
+                        \draw [->] (soc) -- (effic);
+                \end{tikzpicture}
+        \end{center}
+        \caption{Befunde des Modells von \textcite{foster-fishman_who_2009}. Mediatoren in \textcolor{magenta}{magenta}. Alle Pfade, die f"ur \textcolor{red}{Leader} signifikant sind (aber nicht f"ur Follower) in \textcolor{red}{rot}. Alle Pfade, die nur f"ur \textcolor{green}{Follower} signifikant sind in \textcolor{green}{gr"un}. Alle anderen Pfaden wirken f"ur beide Gruppen. \emph{Sense of Community} ist ein st"arkerer Pr"adiktor f"ur \emph{Normen} als \emph{Hoffnung} oder \emph{kollektive Wirksamkeit}, angedeutet durch den dicken Pfad.}
+        \label{fig:foster2}
+\end{figure}
+\subsubsection{Welchen Schluss f"ur Interventionen ziehen die Autorinnen aus dem Ergebnis, dass \emph{sense of community} ein st"arkerer Pr"adiktor f"ur \emph{norms of participation} war als \emph{hope} und \emph{collective self-efficacy}?}
+Interventionen sollten vor allem Beziehungen zwischen den Mitgliedern einer Community st"arken.
+
+\subsubsection{Bei der Frage, wie \emph{citizen participation} gef"ordert werden k"onne, ist es also unerheblich, ob man sich am selbst beschriebenen Status (Leader, Follower) der Personen orientiert, oder?}
+Wenn die Frage schon so gestellt ist, dann kann die Antwort ja gar nicht ``Ja'' lauten. Je nachdem, wen man erreichen will, m"ussen unterschiedliche Schwerpunkte gesetzt werden. Vor allem, um Leader zu erreichen, scheint es besonders aussichtsreich, organisatorische F"ahigkeiten zu trainieren.

@@ -1,0 +1,88 @@
+\subsection{Fragen und Antworten zum Text von \textcite{fagan_translational_2009}}
+\subsubsection{Welche Probleme ergeben sich oft, wenn Programme, selbst wenn sie als effektiv gelten, implementiert werden?}
+Die Programme werden nicht fachgerecht umgesetzt. Man spricht dabei von \emph{Fidelity}.
+
+\subsubsection{Was ist PROSPER und was konnte mit Hilfe dieses Programms in diesem Artikel gezeigt werden?}
+PROSPER (Promoting School-community-university Partnerships to Enhance Resilience) ist ein Programm zur Bek"ampfung von Drogenmissbrauch von Jugendlichen. In einer randomisierten Evaluationsstudie konnte gezeigt werden, dass die 14 PROSPER-Communities im Gegensatz zu den Kontroll-Communities Drogenkonsum bei Jugendlichen reduzieren konnten. Das Programm wurde au"serdem fachgerecht umgesetzt.
+
+\subsubsection{Wie l"asst sich das Untersuchungsdesign beschreiben, dass die Autorinnen zur Beantwortung der Fragestellung gew"ahlt haben?}
+Eine l"angsschnittliche (5 Jahre), randomisierte und kontrollierte Evaluationsstudie mit $24$ Communities.
+
+\subsubsection{Welche Untersuchungsmethoden (Methoden, Instrumente) kamen f"ur die Evaluation des \emph{Communities That Care (CTC)}-Programms zum Einsatz und was wurde gemessen (Indikatoren)?}
+CTC besteht aus $5$ Phasen, jede Phase hat \emph{Kernkomponenten}: \emph{Milestones} und \emph{Benchmarks} (Siehe Fig. \ref{fig:fagan1}). Untersucht das Ausma"s der fachgerechten Umsetzung von:
+\begin{enumerate}
+        \item Kernkomponenten des CTC-Programms 
+        \item ausgew"ahlten Pr"aventionsprogramme
+\end{enumerate}
+
+Die zweite Frage bezieht sich auf Phase $5$ des CTC-Programms. Zus"atzlich zu den Kernkomponenten wurden in dieser Phase noch weitere Ma"se genommen:
+\begin{itemize}
+        \item \textbf{Adherence} Checklisten welche Benchmarks erreicht wurden (in Prozent)
+        \item \textbf{Delivery} Wie oft gab es Programm Meetings?
+        \item \textbf{Quality of Delivery} Wie gut waren die Erkl"arungen der Implementierer? (bewertet durch Community Verantwortliche auf einer Rating Skala)
+        \item \textbf{Participant Responsiveness} Wie gut haben die Teilnehmer alles verstanden? (bewertet durch Community Verantwortliche auf einer Rating Skala)
+        \item \textbf{Program Participation}
+                \begin{itemize}
+                        \item \emph{Overall Participation:} Wie viele Sch"uler oder Familien aus der Zielgruppe nahmen an wenigstens einer Sitzung teil?
+                        \item \emph{Retention:} Wie viele Sch"uler oder Familien aus der Zielgruppe nahmen an wenigstens $60 \%$ der Sitzungen teil?
+                \end{itemize}
+\end{itemize}
+
+\begin{figure}[hb!]
+        \begin{center}
+                \begin{tikzpicture}[
+                        phase/.style={shape=circle,draw,fill=black!20,font=\large\scshape,minimum size=3cm},
+                        mile/.style={shape=ellipse,draw,text width=3cm,fill=red!20,font=\large\scshape},
+                        bench/.style={shape=rectangle,draw,rounded corners,text centered,text width=2.5cm}
+                        ]
+                        %Phase und Milestones
+                        \node [phase] at (-2,0) (p1) {Phase $X$};
+                        \node [mile] at (3,0) (mj) {Milestone $M_j$};
+                        \node [mile,above=of mj] (m1) {Milestone $M_1$};
+                        \node [mile,below=of mj] (mn){Milestone $M_n$};
+                        %Pfade zwischen Phase und Milestones
+                        \draw [-] (p1) -- (mj);
+                        \draw [-] (p1) -- (m1);
+                        \draw [-] (p1) -- (mn);
+                        %Benchmarks
+                        \node [bench,right=of m1] (bi) {Benchmark $B_i$};
+                        \node [bench,above=of bi] (b1) {Benchmark $B_1$};
+                        \node [bench,below=of bi] (bm) {Benchmark $B_m$};
+                        %Pfade zwischen Milestone und Benchmark
+                        \draw [-] (m1) -- (b1);
+                        \draw [-] (m1) -- (bi);
+                        \draw [-] (m1) -- (bm);
+                \end{tikzpicture}
+        \end{center}
+        \caption{Exemplarische Veranschaulichung der Kernkomponenten des CTC-Programms f"ur eine Phase. In jeder Phase gibt es Milestones. Das sind Ziele, die erreicht werden sollen. Die Benchmarks sind spezifische Handlungen, um diese Ziele zu erreichen. Milestones und Benchmarks wurden durch Befragung der Community-Verantwortlichen (dichotom) und der TA's (Rating Skala) ermittelt.}
+        \label{fig:fagan1}
+\end{figure}
+
+\subsubsection{Implementation of the prevention programmes: Aus welchen Gr"unden konnten die Programme \emph{PDE} und \emph{Project towards no Drug Abuse} nur geringere Werte auf den Adherence Scores erreichen?}
+PDE: es handelte sich um eine kleine, l"andliche Community, die sich keinen Koordinator f"ur das Programm leisten konnte. Da das Programm sehr aufwendig ist, haben sie dann beschlossen, es nicht fotzuf"uhren.\\
+Project towards no Drug Abuse: Das Programm beinhaltet ein Spiel zur Erfassung der gelernten Inhalte. Dieses Spiel wurde nicht gespielt, daher der schlechte Score.
+
+\subsubsection{Implementation of the prevention programmes: Welche Schwierigkeiten ergaben sich bei der Implementierung des \emph{Olweus Bullying Prevention Program}?}
+Die Schulen empfanden es als schwer, w"ochentliche Meetings abzuhalten. Vor allem Phase $5$, wo insgesamt $40$ Sessions ein- bis zweimal pro Woche abgehalten werden sollten, war eine Herausforderung.
+
+\subsubsection{Implementation of the prevention programmes: ``Verringerte Partizipationsraten in den Programmen hingen nicht mit Misserfolgen der Programme zusammen, sondern mit\ldots''}
+\ldots der Art der Messung. Die Studie endete im M"arz, alles was danach kam wurde also nicht erfasst.
+
+\subsubsection{The challenge of participant recruitement: Welche Barrieren werden genannt, die die Teilnahme von Familien an Parent Training Programmen erschwerten? Wie wurde in drei F"allen versucht, diesen Barrieren zu begegnen?}Barrieren:
+\begin{itemize}
+        \item Rekrutierung ist personal- und kostenintensiv
+        \item konkurrierende Aktivit"aten
+        \item Stigma
+        \item Transportation
+        \item Kinderbetreuung
+\end{itemize}
+
+\noindent Es wurde auf folgende Arten versucht, dem Problem zu begegnen:
+\begin{itemize}
+        \item Programm(e) komplett beenden
+        \item sich auf ein Programm konzentrieren
+        \item Programme f"ur zu Hause anbieten
+\end{itemize}
+
+
+
