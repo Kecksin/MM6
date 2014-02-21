@@ -1,3 +1,4 @@
+\section{Theorie-Praxis-Austausch}
 \subsection{Fragen und Antworten zum Text von \textcite{meyers_practical_2012}}
 \subsubsection{Mit welchem Hauptspiel wurde das Quality Implementation Tool (QIT) entwickelt?}
 Um Stakeholdern zu helfen, Programm zu implementieren.
@@ -26,4 +27,39 @@ Adaptation von nicht-essenziellen Komponenten ist n"otig, um eine \emph{Passung 
 Die Kenntnis der Kapazt"at ist zentral f"ur das Schlie"sen der L"ucke zwischen Forschung und Praxis. 
 
 \subsubsection{Skizzieren sie die drei Systeme des \emph{interactive systems frameworks for dissemination and implementation (ISF)}! Was ist jeweils die Funktion des Systems?}
+Das \emph{Synthese \& Translationssystem} soll wissenschaftliche, theoretische und praktische Informationen sammeln und in ein benutzerfreundliches Format "ubersetzen.\\
+
+\noindent Das \emph{Delivery System} (z.B. Schule, Organisation) soll die Innovation in die Praxis umsetzen.\\
+
+\noindent Dabei unterst"utzt wird das Delivery System vom \emph{Support System}, welches Innovationsspezifische (F"ahigkeiten, Wissen, Motivation) und generelle Kapazit"aten (Infrastruktur) bilden soll. (Siehe Fig. \ref{fig:meyers1})
+\begin{figure}[hb!]
+        \begin{center}
+                \begin{tikzpicture}[system/.style={rectangle,draw,rounded corners,text centered,text width=4cm,minimum size=2cm}
+                        ]
+                        %die drei Systeme
+                        \node [system] at (0,0) (synthesis) {Synthese \& Translation};
+                        \node [system,above=of synthesis] (support) {Support: {\footnotesize \emph{generelle} and \emph{innovationsspezifische} Kapazit"atenbildung}};
+                        \node [system,above=of support] (delivery) {Delivery: {\footnotesize Innovation in die Praxis umsetzen}};
+                        %Implementation
+                        \node [right=of delivery] (outcomes) {Outcomes};
+                        \draw [->,very thick,red] (delivery) -- (outcomes);
+                        \draw [->,very thick,red] (support) -- (delivery);
+                \end{tikzpicture}
+        \end{center}
+        \caption{Bildliche Darstellung des \emph{Interacting Systems Framework} von Wandersman et al. (2008).}
+        \label{fig:meyers1}
+\end{figure}
+
+\subsubsection{In welchen Formaten k"onnen \emph{Synthese und Translation} benutzerfreundlich zusammengefasst werden?}
+\emph{Handb"ucher}, \emph{Spreadsheets (Excel)}, \emph{Interventionen} oder \emph{Strategien}.
+
+\subsubsection{Welche Arten von Kapazit"aten werden im \emph{Support System} unterschieden?}
+\emph{Innovationsspezifische} und \emph{generelle} Kapazit"aten.
+
+\subsubsection{F"ur welche drei Zwecke kann das QIT eingesetzt werden?}
+\begin{itemize}
+        \item Planung von Quality Implementation
+        \item Echtzeit-Monitoring von Implementierung
+        \item Evaluation, inwiefern Quality Implementation gelungen ist
+\end{itemize}
 
